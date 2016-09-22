@@ -1,0 +1,505 @@
+$desktop: 999px
+
+
+
+@font-face
+	font-family: ProximaNovaLight
+	src: url(../fonts/ProximaNovaLight.otf), url(../fonts/ProximaNova-Light.woff), url(../fonts/ProximaNova-Light.ttf)
+
+@font-face
+	font-family: ProximaNovaSemibold
+	src: url(../fonts/ProximaNovaSemibold.otf), url(../fonts/ProximaNova-Semibold.woff), url(../fonts/ProximaNova-Semibold.ttf)
+
+@font-face
+	font-family: ProximaNovaBold
+	src: url(../fonts/ProximaNovaBold.otf), url(../fonts/ProximaNova-Bold.woff), url(../fonts/ProximaNova-Bold.ttf)
+
+@font-face
+	font-family: ProximaNovaRegular
+	src: url(../fonts/ProximaNova-Regular.woff), url(../fonts/ProximaNovaRegular.otf),  url(../fonts/ProximaNova-Regular.ttf)
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+  box-sizing: border-box
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+a
+  text-decoration: none
+  
+.cf:before,
+.cf:after 
+  content: " "
+  display: table
+
+.cf:after
+  clear: both
+
+
+h2
+	font-family: ProximaNovaLight
+	font-size: 36px
+	color: #646464
+
+h3
+	font-family: ProximaNovaRegular
+	font-size: 24px
+
+a.download
+	width: 100%
+	max-width: 400px
+	line-height: 90px
+	border-radius: 3px
+	background: #00aaff
+	color: #fff
+	text-transform: uppercase
+	font-family: ProximaNovaSemibold
+	font-size: 21px
+	display: inline-block
+	background-image: url(../img/downBtn.png)
+	background-repeat: no-repeat
+	background-position: 90% center
+	text-align: center
+
+a.download:hover
+	background-color: #00a0ff
+
+
+a.orClick
+	font-family: ProximaNovaRegular
+	color: #00aaff
+	margin: 17px auto
+	display: block
+	text-decoration: underline
+	text-align: center
+
+.inner
+	width: 100%
+	max-width: 1000px
+	margin: 0 auto
+	position: relative
+	text-align: center
+
+header
+	background: #fafdff
+	border-bottom: 1px solid #dcdcdc
+	line-height: 75px
+	box-shadow: 0 0 4px rgba(0,0,0,.3)
+
+	img
+		float: left
+		margin-top: 22px
+
+	h2
+		span
+			border: 1px solid #00b3ff
+			border-radius: 3px
+			padding: 0 5px	
+	
+	.inner:after
+		content: ''
+		display: block
+		position: absolute
+		bottom: -5px
+		left: 180px
+		width: 10px
+		height: 10px
+		border-left: 1px solid #dcdcdc
+		border-bottom 1px solid #dcdcdc
+		transform: rotate(-45deg)
+		background: #fafdff
+		box-shadow: -1px 1px 1px rgba(0,0,0,0.3)
+
+@media screen and (max-width: $desktop)
+	header
+		img
+			float: none
+
+		.inner:after
+			left: 47%
+
+
+.steps
+	padding-top: 30px
+	padding-bottom: 35px
+	border-bottom: 1px solid #f1f7fa
+
+	.right
+		width: 560px
+		float: right
+
+		.mac
+			width: 100%
+			height: auto
+
+		.week
+			display: inline-block
+			position: relative
+			margin-right: 65px
+
+			p
+				font-family: ProximaNovaLight
+				color: #969fa8
+				font-size: 16px
+
+			span
+				font-family: ProximaNovaRegular
+				color: #44aff9
+				font-size: 39px
+
+				span
+					font-family: ProximaNovaLight
+					color: #b9bbbd
+
+		
+		.week:before,
+		.week:after
+			content: ''
+			display: block
+			height: 50px
+			width: 25px
+			background: url(../img/weekBg.png)
+			position: absolute
+
+
+		.week:before
+			left: -25px
+
+		.week:after
+			right: -25px
+			top: 0
+			background-position: -30px
+
+
+
+	.left
+		width: 415px
+		float: left
+		padding-top: 25px
+		text-align: left
+
+		li
+			line-height: 70px
+			width: 400px
+			border: 1px solid #dde3e7
+			margin-bottom: 20px
+			padding-left: 15px
+			color: #414141
+			font-size: 18px
+
+			.stepNum
+				font-family: ProximaNovaSemibold
+				margin-left: 24px
+				margin-right: 20px
+
+			.stepText
+				font-family: ProximaNovaRegular
+
+				a,
+				span
+					font-family: ProximaNovaBold
+
+				a
+					color: #00aaff
+					text-decoration: underline
+
+
+			img
+				vertical-align: middle
+
+@media screen and (max-width: $desktop)
+	.steps
+		.left,
+		.right
+			float: none
+			width: 100%
+			text-align: center
+
+		.left
+			li
+				width: 95%
+				margin: 20px auto
+				text-align: left
+	
+
+.trust
+	padding: 30px 0
+
+	li
+		display: inline-block
+		width: 24%
+		line-height: 50px
+
+		img
+			vertical-align: middle
+		
+		img:first-child
+			display: none
+
+		img:last-child
+			display: inline-block
+
+	li:hover
+
+		img:first-child
+			display: inline-block
+
+		img:last-child
+			display: none
+
+@media screen and (max-width: $desktop)
+	.trust
+		li
+			width: 49%
+			margin-top: 20px
+
+.macTools
+	background: #f3f6f8
+	padding: 35px 0
+
+	h3
+		color: #181818
+		margin-bottom: 60px
+
+		span
+			color: #00aaff
+
+	.left
+		max-width: 680px
+		width: 100%
+		position: relative
+		z-index: 1
+		float: left
+
+	.hex
+		width: 14%
+		background: #fff
+		display: inline-block
+		margin: 18px 1%
+		position: relative
+
+		img
+			height: 100%
+
+	.activeTool,
+	.activeTool:after,
+	.activeTool:before
+		border-left: 1px solid #00a4ff
+		border-right: 1px solid #00a4ff
+
+	.activeTool:after
+		box-shadow: -4px 0px 4px rgba(0,0,0,.3)
+
+	.activeTool:before
+		box-shadow: 4px 0px 4px rgba(0,0,0,.3)
+
+
+	.hex:before,
+	.hex:after
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		background: #fff
+		z-index: -1
+
+	.hex:before
+		transform: rotate(60deg)
+		left: -1px
+		top: 0px
+
+	.hex:after
+		transform: rotate(-60deg)
+		top: 0
+
+	.right
+		width: 280px
+		float: right
+		border: 1px solid #dbdbdb
+		border-radius: 4px
+		float: right
+		font-family: ProximaNovaRegular
+
+		.top
+			border-bottom: 1px solid #dbdbdb
+			padding: 15px 0
+
+			.toolImg
+				margin-bottom: 15px
+
+			.toolName
+				font-size: 14px
+				color: #3a3a3a
+				margin-bottom: 15px
+				text-transform: uppercase
+
+		.bottom
+			padding: 30px 25px 25px
+
+			.toolDescription
+				color: #737373
+
+			.toolLink
+				line-height: 46px
+				border: 1px solid #00aaff
+				color: #00aaff
+				width: 165px
+				border-radius: 4px
+				display: inline-block
+				margin-top: 30px
+
+@media screen and (max-width: $desktop)
+	.macTools
+		.right,
+		.left
+			float: none
+			margin: 30px auto
+
+
+.reviews
+	padding: 25px 0 35px
+	border-bottom: 1px solid #ddd
+
+	h3
+		color: #646464
+		margin-bottom: 40px
+
+	.rev
+		border: 1px solid #ddd
+		border-radius: 4px
+		width: 310px
+		text-align: left
+		font-family: ProximaNovaRegular
+		margin-right: 30px
+		display: inline-block
+
+		.top
+			border-bottom: 1px solid #ddd
+			padding: 20px 25px 15px
+
+			.stars
+
+				i
+					color: #ffcd63
+					margin-right: 5px
+
+			p
+				font-size: 16px
+				color: #737373
+				margin-top: 15px
+
+		.bottom
+			padding: 20px 25px 15px
+
+			.name
+				font-family: ProximaNovaSemibold
+				color: #111
+				font-size: 14px
+
+			p
+				font-size: 14px
+				color: #878787
+				margin-top: 10px
+
+	.rev:last-child
+		margin-right: 0
+
+@media screen and (max-width: $desktop)
+	.reviews
+		.rev
+			margin: 20px auto
+
+
+.prefooter
+	padding: 40px 0
+
+	.downloadWrap
+		display: inline-block
+		width: 100%
+		max-width: 400px
+
+	img
+		vertical-align: top
+		margin: 0 40px
+
+@media screen and (max-width: $desktop)
+	.prefooter
+		img
+			margin: 20px 40px
+
+
+footer
+	background: #f4fafd
+	font-family: ProximaNovaRegular
+
+	.links
+		padding: 20px 0
+		background: #fafdff
+		border-top: 1px solid #e5eaec
+		border-bottom: 1px solid #e5eaec
+		text-align: center
+		
+		ul
+
+			li
+				display: inline-block
+				font-size: 14px
+				color: #434343
+				margin: 0 9px
+
+	.inner
+		p
+			color: #747a7d
+			font-size: 12px
+			margin-top: 10px
+
+			a
+				color: #018fd0
+				text-decoration: underline
+
+		.copy
+			color: #989898
+			margin-top: 15px
+
+
